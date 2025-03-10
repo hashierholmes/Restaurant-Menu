@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background: url("image/bg.jpg") no-repeat center center/cover;
     color: #333;
 }
 
@@ -21,7 +21,7 @@ body {
 }
 
 .hero {
-    background: url('restaurant.jpg') no-repeat center center/cover;
+    background: url('image/restaurant.jpg') no-repeat center center/cover;
     height: 350px;
     display: flex;
     align-items: center;
@@ -65,7 +65,13 @@ body {
 }
 
 #about {
-    background-color: #e9ecef;
+    background-color: #f8f9fa;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 #contact {
@@ -82,12 +88,3 @@ body {
 #contact a:hover {
     text-decoration: underline;
 }
-
-.footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
-}
-
