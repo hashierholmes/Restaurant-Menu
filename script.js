@@ -27,21 +27,3 @@ document.addEventListener("DOMContentLoaded", function() {
       menuContainer.appendChild(menuItem);
    });
 });
-
-
-function setupClickListener(elementId, url) {
-  const element = document.getElementById(elementId);
-  if (element) {
-    element.addEventListener("click", function () {
-      window.location.href = url;
-    });
-  }
-}
-
-const links = [
-  { ids: ["signup"], url: "/index.html" }
-];
-
-links.forEach(link => {
-  link.ids.forEach(id => setupClickListener(id, link.url));
-});
