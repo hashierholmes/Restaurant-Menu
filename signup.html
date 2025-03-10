@@ -23,11 +23,26 @@
             <div class="mb-3">
                <input type="password" class="form-control" id="password" required placeholder="Password">
             </div>
-            <button id="signup" style="background-color: #242424;" type="submit" class="btn btn-light w-100 "><a style="text-decoration: none; color: #dedede" href="index.html">Sign Up</a></button>
+            <button id="signup" style="background-color: #242424; color: white;" type="submit" class="btn btn-light w-100">Sign Up</button>
             <p class="text-center mt-3">Already have an account? <a style="color: darkorange; text-decoration: none;" href="index.html">Login</a></p>
          </form>
       </div>
    </div>
-   <script src="script.js"></script>
+   
+   <script>
+      document.getElementById("signupForm").addEventListener("submit", function(event) {
+         event.preventDefault();
+         const fullname = document.getElementById("fullname").value.trim();
+         const email = document.getElementById("email").value.trim();
+         const password = document.getElementById("password").value.trim();
+         
+         if (fullname !== "" && email !== "" && password !== "") {
+            window.location.href = "index.html";
+         } else {
+            alert("Please fill in all fields.");
+         }
+      });
+   </script>
 </body>
+
 </html>
